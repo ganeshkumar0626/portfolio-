@@ -1,0 +1,94 @@
+:root{--bg:#08090b;--card:#101217;--ln:#22252e;--tx:#eceef2;--mu:#8f95a3;--acc:#3d7cff;--acc2:#6a9cff;--red:#ff3b57;--ok:#2ee59d}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:"DM Sans",system-ui,sans-serif;font-size:1.05rem;line-height:1.65}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.03em;color:#fff}
+section{padding:5.5rem 0;border-top:1px solid var(--ln);scroll-margin-top:60px}
+.hero{border-top:0;padding-top:8rem}
+:focus-visible{outline:3px solid var(--acc2);outline-offset:3px;border-radius:6px}
+.idx{font:500 .8rem "JetBrains Mono",monospace;color:var(--mu);margin-bottom:1.6rem}
+.muted{color:var(--mu)}
+h2{font-weight:800;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08;max-width:44rem;margin-bottom:1.2rem}
+.lead2{color:var(--mu);max-width:38rem;margin-bottom:2.5rem}
+ 
+/* Buttons */
+.btn{font-weight:600;border-radius:12px}
+.btn-acc{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn-acc:hover{background:#2a68ea;border-color:#2a68ea;color:#fff}
+.btn-line{border:1.5px solid #3a3e4a;color:var(--tx)}
+.btn-line:hover{background:#fff;color:#000;border-color:#fff}
+ 
+/* Nav */
+.navbar{background:rgba(8,9,11,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+.brand{font:800 1.1rem "Bricolage Grotesque",sans-serif;color:#fff;text-decoration:none;background:var(--acc);border-radius:10px;padding:.2rem .6rem}
+.navbar-toggler{color:#fff;font-size:1.6rem;border:0;padding:0}
+.nav-link{color:var(--mu);font-weight:500}
+.nav-link:hover,.nav-link.active{color:#fff}
+.avail{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--ok)}
+.avail i,.chip i{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(46,229,157,.18)}
+@media(max-width:991.98px){.navbar-collapse{padding:1rem 0}}
+ 
+/* Hero */
+.chip{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--ln);background:var(--card);border-radius:999px;padding:.3rem 1rem;font-size:.9rem;color:var(--mu)}
+.chip i{display:block}
+h1{font-weight:800;font-size:clamp(3rem,9vw,6.4rem);line-height:.95;letter-spacing:-.05em;margin:1.4rem 0 1rem}
+.roles{font:600 clamp(1.15rem,2.6vw,1.6rem) "Bricolage Grotesque",sans-serif;color:#fff;margin-bottom:1.2rem}
+.roles span{color:var(--acc2);margin:0 .3rem}
+.tag{font-size:1.3rem;color:#fff;max-width:32rem}
+.sub{color:var(--mu);max-width:32rem}
+.photo{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--ln);max-width:420px;margin-inline:auto}
+.photo img{display:block;width:100%;aspect-ratio:5/6;object-fit:cover}
+.badge-loc{position:absolute;left:14px;bottom:14px;background:rgba(8,9,11,.75);backdrop-filter:blur(8px);border:1px solid var(--ln);border-radius:999px;padding:.25rem .8rem;font-size:.85rem}
+.badge-loc i{color:var(--red);margin-right:.4rem}
+.stats{margin-top:4rem}
+.stats>div{border-top:1px solid var(--ln);padding-top:1rem}
+.stats b{display:block;font:800 clamp(2rem,5vw,3rem) "Bricolage Grotesque",sans-serif;line-height:1}
+.stats span{color:var(--mu);font-size:.92rem}
+ 
+/* Cards */
+.card-d{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:1.6rem;height:100%;transition:border-color .2s}
+.card-d:hover{border-color:#3a4256}
+.card-d h3{font-weight:800;font-size:1.35rem}
+.card-d h3 i{color:var(--acc2);margin-right:.6rem}
+.card-d.big h3{font-size:1.9rem}
+.card-d.img{padding:0;overflow:hidden;min-height:280px}
+.card-d.img img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}
+.meta{font:500 .8rem "JetBrains Mono",monospace;color:var(--mu);margin-bottom:.8rem}
+.meta em{font-style:normal;color:var(--ok);border:1px solid rgba(46,229,157,.4);border-radius:999px;padding:1px 9px;margin-left:.6rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.tags span{border:1px solid var(--ln);background:#161922;border-radius:999px;padding:.2rem .8rem;font-size:.88rem}
+.card-d ul{padding-left:1.1rem;margin:0;color:#c5c9d4}
+.card-d li::marker,.pts li::marker{color:var(--acc)}
+ 
+/* Works */
+.work{border-top:1px solid var(--ln);padding:2.6rem 0}
+.work:first-of-type{margin-top:2.5rem}
+.work h3{font-weight:800;font-size:clamp(2rem,4vw,3rem)}
+.wtop{display:flex;align-items:center;flex-wrap:wrap;gap:.8rem;margin-bottom:1rem;font-size:.85rem}
+.no{font:500 .85rem "JetBrains Mono",monospace;color:var(--acc2)}
+.st{border:1px solid #3a3e4a;border-radius:999px;padding:1px 10px}
+.st.live{color:var(--ok);border-color:rgba(46,229,157,.4)}
+.cat{color:var(--mu)}
+.pts{padding-left:1.1rem;margin:1rem 0 1.6rem;color:#c5c9d4}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.mini div{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:1.2rem}
+.mini b{display:block;font:800 1.5rem "Bricolage Grotesque",sans-serif;line-height:1.15;overflow-wrap:anywhere}
+.mini span{color:var(--mu);font-size:.88rem}
+ 
+/* Contact */
+.copy{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:1.1rem 1.3rem;color:#fff;margin-bottom:.8rem;transition:border-color .2s}
+.copy:hover{border-color:var(--acc)}
+.copy span{display:block;font:600 clamp(1rem,2.4vw,1.3rem) "Bricolage Grotesque",sans-serif;overflow-wrap:anywhere}
+.copy small{color:var(--mu)}
+.link-row{display:flex;align-items:center;gap:.8rem;border-bottom:1px solid var(--ln);padding:.9rem .2rem;color:#fff;text-decoration:none;font-weight:500}
+.link-row i{color:var(--acc2);font-size:1.15rem}
+.link-row span{margin-left:auto;color:var(--mu);font-size:.92rem}
+.link-row:hover span{color:#fff}
+.brief{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:1.6rem}
+.brief label{display:block;margin:.8rem 0 .3rem;font-size:.9rem;color:var(--mu)}
+.brief .form-control{background:#0b0d11;border:1px solid var(--ln);color:#fff;border-radius:10px}
+.brief .form-control:focus{border-color:var(--acc);box-shadow:0 0 0 3px rgba(61,124,255,.25)}
+footer{border-top:1px solid var(--ln);padding:1.6rem 0;color:var(--mu);font-size:.92rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+ 
+
+
